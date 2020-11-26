@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import img from "./assets/img/404.png";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="notFound">
+      <div className="header">
+        404{" "}
+        <u>
+          <span style={{ fontWeight: "lighter", fontSize: 12 }}>NOT FOUND</span>
+        </u>
+      </div>
+      <div className="main">
+        <div className="img">
+          <img src={img} alt="notFoundPage" />
+        </div>
+        <div className="text">
+          <span>Opps sorry, we can't find what you're looking for~</span>
+          <br />
+          <button href="#">↩ Go Back</button>
+        </div>
+      </div>
+      <div className="footer">Create By TheRevolt</div>
     </div>
   );
 }
